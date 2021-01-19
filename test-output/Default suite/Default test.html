@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 18 11:23:47 GMT 2021</td>
+<td>Started on:</td><td>Tue Jan 19 20:58:03 GMT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29157 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38751 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.flipkart.Test.LoginPageTest.loginPageTitleTest()'><b>loginPageTitleTest</b><br>Test class: com.flipkart.Test.LoginPageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. 123Best Offers!] but found [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.flipkart.Test.LoginPageTest.loginPageTitleTest(LoginPageTest.java:42)
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;MADHURI&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at com.flipkart.pages.LoginPage.loginSuccessfullValidation(LoginPage.java:29)
+	at com.flipkart.Test.LoginPageTest.loginPageTitleTest(LoginPageTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,15 +115,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1557534595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1557534595'><pre>java.lang.AssertionError: expected [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. 123Best Offers!] but found [Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books &amp; More. Best Offers!]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.flipkart.Test.LoginPageTest.loginPageTitleTest(LoginPageTest.java:42)
+</pre></div><a href='#' onClick='toggleBox("stack-trace253380088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace253380088'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;MADHURI&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at com.flipkart.pages.LoginPage.loginSuccessfullValidation(LoginPage.java:29)
+	at com.flipkart.Test.LoginPageTest.loginPageTitleTest(LoginPageTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,7 +157,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.flipkart.Test.LoginPageTest@6193932a</td></tr>
+<td>com.flipkart.Test.LoginPageTest@13e547a9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -163,18 +169,23 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.flipkart.Test.LoginPageTest.LoginTest()'><b>LoginTest</b><br>Test class: com.flipkart.Test.LoginPageTest<br>Parameters: lokhande8madhuri@gmail.com, Madhuri8l</td>
 <td></td>
-<td>9</td>
-<td>com.flipkart.Test.LoginPageTest@6193932a</td></tr>
+<td>8</td>
+<td>com.flipkart.Test.LoginPageTest@13e547a9</td></tr>
+<tr>
+<td title='com.flipkart.Test.LoginPageTest.LoginTest()'><b>LoginTest</b><br>Test class: com.flipkart.Test.LoginPageTest<br>Parameters: abcd@gmail.com, abcd1232</td>
+<td></td>
+<td>8</td>
+<td>com.flipkart.Test.LoginPageTest@13e547a9</td></tr>
 <tr>
 <td title='com.flipkart.Test.LoginPageTest.LoginTest()'><b>LoginTest</b><br>Test class: com.flipkart.Test.LoginPageTest<br>Parameters: Selenium@gmail.com, password123</td>
 <td></td>
-<td>9</td>
-<td>com.flipkart.Test.LoginPageTest@6193932a</td></tr>
+<td>8</td>
+<td>com.flipkart.Test.LoginPageTest@13e547a9</td></tr>
 <tr>
 <td title='com.flipkart.Test.LoginPageTest.LoginTest()'><b>LoginTest</b><br>Test class: com.flipkart.Test.LoginPageTest<br>Parameters: Selenium12@gmail.com, abcdefgh</td>
 <td></td>
-<td>9</td>
-<td>com.flipkart.Test.LoginPageTest@6193932a</td></tr>
+<td>8</td>
+<td>com.flipkart.Test.LoginPageTest@13e547a9</td></tr>
 </table><p>
 </body>
 </html>

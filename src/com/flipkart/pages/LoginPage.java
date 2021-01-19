@@ -7,8 +7,11 @@ import com.flipkart.TestBase.TestBase;
 
 public class LoginPage extends TestBase {
 
-	public LoginPage() throws IOException {
+	
 
+	public LoginPage() throws IOException {
+		super();
+		
 	}
 
 	public void loginwithUserNmAndPawd(String uname, String passwd) {
@@ -28,14 +31,9 @@ public class LoginPage extends TestBase {
 	}
 
 	//Check if username is present after Login
-	public boolean isLinkPresent(String xpathkey) {
-		try {
-			driver.findElement(By.xpath(prop.getProperty(xpathkey)));
-			return true;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return false;
-		}
-	}
-
+	/*
+	 * public boolean isLinkPresent(String xpathkey) { try {
+	 * driver.findElement(By.xpath(prop.getProperty(xpathkey))); return true; }
+	 * catch (Exception e) { e.printStackTrace(); return false; } }
+	 */
 }

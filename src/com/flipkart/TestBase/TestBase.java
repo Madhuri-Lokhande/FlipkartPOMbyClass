@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -25,6 +26,7 @@ public class TestBase {
 				"D:\\Software Testing Hands On\\Automation Programs\\First Attempt towards POM\\src\\com\\flipkart\\config\\config.properties");
 		prop = new Properties();
 		prop.load(ip);
+		
 
 		if (prop.getProperty("browser").equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", prop.getProperty("chrome-file-path"));
@@ -39,11 +41,6 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		driver.get(prop.getProperty("url"));
-	}
-
-	@AfterTest
-	public void tearDown() {
-		driver.close();
 	}
 
 }
